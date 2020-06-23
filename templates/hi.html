@@ -1,0 +1,54 @@
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>11주차과제</title>
+    <style>
+        td, th {
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>
+            <strong>주소록</strong>
+        </caption>
+        <tr>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            {% block name %}
+            <th>김상순</th>
+            {% endblock %}
+
+
+             {% block address %}
+            <td>서울특별시 용산구</td>
+             {% endblock %}
+        </tr>
+
+         <tr>
+             {% block name2 %}
+            <th>이민우</th>
+             {% endblock %}
+
+
+             {% block address2 %}
+             <td>서울특별시 중구</td>
+             {% endblock %}
+        </tr>
+         <tr>
+             {% block name3 %}
+            <th>김영희</th>
+             {% endblock %}
+
+
+             {% block address3 %}
+             <td>서울특별시 중랑구</td>
+             {% endblock %}
+        </tr>
+</table>
+    <body>
+
+</html>
